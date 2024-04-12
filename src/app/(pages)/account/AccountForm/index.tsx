@@ -114,7 +114,7 @@ const AccountForm: React.FC = () => {
             error={errors.email}
             type="email"
           />
-          <Input name="name" label="Name" register={register} error={errors.name} />
+          <Input name="name" label="Address" register={register} error={errors.name} />
         </Fragment>
       ) : (
         <Fragment>
@@ -148,6 +148,8 @@ const AccountForm: React.FC = () => {
           />
         </Fragment>
       )}
+      
+
       <Button
         type="submit"
         label={isLoading ? 'Processing' : changePassword ? 'Change Password' : 'Update Account'}

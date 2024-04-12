@@ -30,7 +30,7 @@ export const CustomerSelect: React.FC<TextField> = props => {
           const fetchedCustomers = res.data.reduce(
             (acc, item) => {
               acc.push({
-                label: item.name || item.email || item.id,
+                label: item.name || item.email || item.id||item.address||item.zipCode,
                 value: item.id,
               })
               return acc
